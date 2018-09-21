@@ -1,0 +1,14 @@
+.navbar{
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+   
+}
+.nav-linkk{
+    display: flex;
+  align-items: baseline;
+  }
+  .fa-user-circle{
+    font-size: 150%;
+  }
