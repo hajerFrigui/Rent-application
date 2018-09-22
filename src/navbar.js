@@ -17,7 +17,7 @@ import './navbar.css'
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <Link to="/" class="nav-link" href="#">About us<span class="sr-only">(current)</span></Link>
+                  <Link to="/about us" class="nav-link" href="#">About us<span class="sr-only">(current)</span></Link>
                 </li>
                 <li class="nav-item">
                   <Link to="/home"class="nav-link" href="#">Home</Link>

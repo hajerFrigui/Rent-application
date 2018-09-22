@@ -3,7 +3,8 @@ import Navbar from "./navbar";
 import Cards from "./cards";
 import Footer from "./footer";
 import data from "./data";
-import Inscrip from "./inscrip"
+import Inscrip from "./inscrip";
+import About from "./About"
 import { Route} from 'react-router-dom';
 import './App.css';
 
@@ -21,7 +22,7 @@ class App extends React.Component {
          <Navbar />
          </div>
 
-     
+     <Route exact path="/about us" component ={About}/>
      <Route exact path="/Inscription" component={Inscrip} />
 
          
