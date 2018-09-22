@@ -23,18 +23,6 @@ import './navbar.css'
                   <Link to="/home"class="nav-link" href="#">Home</Link>
                 </li>
                 <li class="nav-item dropdown">
-                   <Link to="/loisirs" class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Loisirs
-                   </Link>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <Link to="/Loisirs/Movies" class="dropdown-item" href="#">Movies</Link>
-                         <Link to="/Loisirs/Books" class="dropdown-item" href="#">Books</Link>
-                         <Link to="/Loisirs/Magzines" class="dropdown-item" href="#">Magazines</Link>
-
-                    
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
                 <Link to="/tools" class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    Tools
                    </Link>
@@ -46,6 +34,31 @@ import './navbar.css'
                     
                   </div>
                 </li>
+                <li class="nav-item dropdown">
+                <Link to="/tools" class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                   </Link>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <Link to="/tools/garden"class="dropdown-item" href="#">Health-care</Link>
+                      <Link to="/tools/"class="dropdown-item" href="#">Maintenance</Link>
+                      <Link to="/tools/repairs and maintenance"class="dropdown-item" href="#">Car rental agencies</Link>
+
+                    
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                   <Link to="/Houses" class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Houses
+                   </Link>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <Link to="/Loisirs/studio" class="dropdown-item" href="#">Studio</Link>
+                         <Link to="/Loisirs/apartments" class="dropdown-item" href="#">Apartments</Link>
+                         <Link to="/Loisirs/boardingHouses" class="dropdown-item" href="#">Boarding Houses</Link>
+
+                    
+                  </div>
+                </li>
+                
              
               </ul>
               <div className="login-app">

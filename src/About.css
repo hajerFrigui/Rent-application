@@ -25,13 +25,20 @@
    
     
 }
-.about-sevices{
-    background-image: url("femme de menage.jpg")
-}
-.about-hobbies{
-    background-image: url("images.jpg");
 
+.about-tools{
+    background-image: url("images.jpg");
   
+}
+.about-houses{
+  background-image: url("rent.png");
+  padding-right: 12%;
+  margin-top:-15px
+
+}
+
+.about-services{
+  background-image: url("femme de menage.jpg")
 }
 
 .swirl-in-fwd {
