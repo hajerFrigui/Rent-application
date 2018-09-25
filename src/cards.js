@@ -8,7 +8,6 @@ export default class Cards extends React.Component{
         super(props)
         this.state={
             searchValue :"",
-            search: "false"
         }
         this.changeSearch = this.changeSearch.bind(this);
  
@@ -40,9 +39,9 @@ export default class Cards extends React.Component{
             );
            
            
-        let houseAnnouncements = this.props.cards.filter(el => el.type ==="house").slice(0,3)
-        let serviceAnnouncements = this.props.cards.filter(el => el.type ==="service").slice(0,3)      
-        let toolsAnnouncements = this.props.cards.filter(el => el.type ==="tool").slice(0,3)      
+        let houseAnnouncements = this.props.cards.filter(el => el.type ==="house").slice(0,4)
+        let serviceAnnouncements = this.props.cards.filter(el => el.type ==="service").slice(0,4)      
+        let toolsAnnouncements = this.props.cards.filter(el => el.type ==="tool").slice(0,4)      
 
         return (
             <div>
