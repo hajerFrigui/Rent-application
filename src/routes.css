@@ -1,0 +1,8 @@
+.garden-cards,
+.repair-cards,
+.health-cards,
+.serMaintCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

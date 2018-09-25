@@ -7,7 +7,7 @@ const annonceShema = mongoose.Schema({
     img :{type:String ,require},
 
     type:{type : String ,require},
-   category:{type:String, required},
+   category:{type:String, require},
     rented :{ type: String , require},
     numero :{type:Number , require},
     adress:{ type: String , require},
