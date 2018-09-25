@@ -8,9 +8,9 @@ export default class Card extends React.Component{
 <div className="card">
   <img className="card-img-top" src={this.props.card.img} alt="card"/>
   <div className="card-body">
-    <h5 className="card-title">{this.props.card.name}</h5>
+    <h5 className="card-title">{this.props.card.title}</h5>
     <p className="card-text">{this.props.card.price}DT/hour</p>
-    <Link to ={"/annonces/"+this.props.card._id} className="btn btn-secondary" >Rent</Link>
+    <Link to ={"/annonces/"+this.props.card._id} className="btn btn-danger" >Rent</Link>
   </div>
 </div>
         );
