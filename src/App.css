@@ -2,43 +2,9 @@
 
 
 
-/*navbar*/
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(231, 231, 231);
-    color: rgb(85, 85, 85);
-}
 
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-}
 
-.nav-link, 
-.hi{
-  color:white
-}
 
-.nav-link:hover,
-.hi:hover{
-  color:white;
-
-}
-
-.navbar {
-  z-index:1;
-  top:0;
-  position:fixed;
-
-}
-.login-app{
-  display: flex;
-  justify-content: space-around;
-  width: 15%;
-
-}
-
-.hi{  text-decoration: none !important;}
 /*title*/
 .jumbotron-primary {
   display: flex;
@@ -160,11 +126,7 @@ margin-left:15%}
 .test{
   margin-left:30%;
 }
-/*footer
-.footer{
-  position: fixed;;
-  bottom:0px;
-}*/
+
 .navbar-text{
 margin-left:10%;
 }
@@ -206,4 +168,15 @@ margin-left:70%;
 }
 .reset-btn{
   margin-right:5%
+}
+.search-result-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+.title-announcement{
+  margin-top:5%
+}
+.last-announcement{
+  margin-left:5%
 }

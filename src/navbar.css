@@ -1,14 +1,43 @@
-.navbar{
-    position:fixed;
-    top:0px;
-    left:0px;
-    right:0px;
-   
+/*navbar*/
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
 }
-.nav-linkk{
-    display: flex;
-  align-items: baseline;
-  }
-  .fa-user-circle{
-    font-size: 150%;
-  }
+
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.nav-link, 
+.hi{
+  color:white
+}
+
+.nav-link:hover,
+.hi:hover{
+  color:white;
+
+}
+
+
+.login-app,
+.logout-app{
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+
+}
+
+.hi{  text-decoration: none !important;}
+#hajer {
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  z-index: 1;
+}
+
