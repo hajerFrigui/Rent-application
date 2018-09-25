@@ -42,7 +42,7 @@ export default class Cards extends React.Component{
            
         let houseAnnouncements = this.props.cards.filter(el => el.type ==="house").slice(0,3)
         let serviceAnnouncements = this.props.cards.filter(el => el.type ==="service").slice(0,3)      
-        let toolsAnnouncements = this.props.cards.filter(el => el.type ==="tools").slice(0,3)      
+        let toolsAnnouncements = this.props.cards.filter(el => el.type ==="tool").slice(0,3)      
 
         return (
             <div>

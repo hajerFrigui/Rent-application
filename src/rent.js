@@ -31,6 +31,8 @@ export default class Rent extends React.Component{
                 
                 <th>image</th>
                 <th>price</th>
+                <th>type</th>
+                <th>category</th>
                 <th>Rented Name</th>
                 <th>Numero</th>
                 <th>Adress </th>
@@ -43,9 +45,12 @@ export default class Rent extends React.Component{
                
                 <td><img  className="cardrenimg"src={this.state.rentcard.img} alt="renCard"/></td>
                 <td>{this.state.rentcard.price}</td>
+                <td>{this.state.rentcard.type}</td>
+                <td>{this.state.rentcard.category}</td>
                 <td>{this.state.rentcard.rented}</td>
                 <td>{this.state.rentcard.numero}</td>
                 <td>{this.state.rentcard.adress}</td>
+                
                 <td>{this.state.rentcard.disponibility}</td>
                 
               </tr>

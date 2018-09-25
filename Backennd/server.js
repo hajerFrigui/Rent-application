@@ -23,6 +23,7 @@ app.use(bodyparser.json())
          img: req.body.img,
          disponibility: req.body.disponibility,
          type: req.body.type,
+         category:req.body.category,
          rented :req.body.rented,
          numero :req.body.numero,
          adress: req.body.adress
