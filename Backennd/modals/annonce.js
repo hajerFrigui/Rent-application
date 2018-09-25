@@ -5,12 +5,13 @@ const annonceShema = mongoose.Schema({
     title : {type :String, require},
     price : {type :Number,require },
     img :{type:String ,require},
-    disponibility :{type:String,require},
+
     type:{type : String ,require},
    category:{type:String, required},
     rented :{ type: String , require},
     numero :{type:Number , require},
-    adress:{ type: String , require}
+    adress:{ type: String , require},
+    disponibility :{type:String,require}
 
 
   

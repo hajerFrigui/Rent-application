@@ -21,12 +21,13 @@ app.use(bodyparser.json())
          title: req.body.title,
          price : req.body.price,
          img: req.body.img,
-         disponibility: req.body.disponibility,
+       
          type: req.body.type,
          category:req.body.category,
          rented :req.body.rented,
          numero :req.body.numero,
-         adress: req.body.adress
+         adress: req.body.adress,
+         disponibility: req.body.disponibility
 
 
      });
