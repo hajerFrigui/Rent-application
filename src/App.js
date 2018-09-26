@@ -10,6 +10,10 @@ import Rent from "./rent";
 import Garden from "./garden";
 import RepairsMaintenances from "./repairsmaint";
 import Healthcare from "./healthcare";
+import CarRental from "./carrental";
+import Studio from "./studio";
+import Apartment from "./apartment";
+import BoardingHouse from "./boardingHouse";
 
 import axios from "axios";
 import ServMaint from "./servMaint";
@@ -60,6 +64,22 @@ class App extends React.Component {
         <Route
           path="/services/maintenance"
           render={() => <ServMaint cards={this.state.cards} />}
+        />
+        <Route
+          path="/services/car-rental"
+          render={() => <CarRental cards={this.state.cards} />}
+        />
+        <Route
+          path="/houses/studios"
+          render={() => <Studio cards={this.state.cards} />}
+        />
+        <Route
+          path="/houses/apartments"
+          render={() => <Apartment cards={this.state.cards} />}
+        />
+        <Route
+          path="/houses/boarding-houses"
+          render={() => <BoardingHouse cards={this.state.cards} />}
         />
 
         <Route path="/home" render={() => <Cards cards={this.state.cards} />} />

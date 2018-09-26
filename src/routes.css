@@ -1,7 +1,11 @@
 .garden-cards,
 .repair-cards,
 .health-cards,
-.serMaintCards {
+.serMaintCards,
+.car-rental-cards,
+.boarding-house,
+.studio-cards,
+.apartment-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

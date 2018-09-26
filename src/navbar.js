@@ -109,18 +109,18 @@ export default class Navbar extends React.Component {
                 Houses
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link to="/Loisirs/studio" className="dropdown-item" href="#">
+                <Link to="/houses/studios" className="dropdown-item" href="#">
                   Studio
                 </Link>
                 <Link
-                  to="/Loisirs/apartments"
+                  to="/houses/apartments"
                   className="dropdown-item"
                   href="#"
                 >
                   Apartments
                 </Link>
                 <Link
-                  to="/Loisirs/boardingHouses"
+                  to="/houses/boarding-houses"
                   className="dropdown-item"
                   href="#"
                 >
