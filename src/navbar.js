@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
 import "./navbar.css";
 export default class Navbar extends React.Component {
   render() {
@@ -130,6 +130,11 @@ export default class Navbar extends React.Component {
             </li>
           </ul>
         </div>
+        <Button className="sign-button-google" color="danger">
+          <Link to="/signUp" className="sign-link-google">
+            Sign up With Google
+          </Link>
+        </Button>
       </nav>
     );
   }

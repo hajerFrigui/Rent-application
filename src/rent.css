@@ -1,6 +1,26 @@
-.rentable{
-    margin-top:10%
+.card-show {
+  margin: auto;
+
+  height: 50%;
+  display: flex;
+  justify-content: center;
 }
-.cardrenimg{
-    width:10%
+.card-show-img-title {
+  width: 50%;
+}
+.card-show-infos {
+  margin-top: 10%;
+}
+.image-container {
+  margin-left: 10%;
+  width: 50%;
+  height: 60%;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+.button-verif-rent {
+  width: 120%;
 }

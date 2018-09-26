@@ -1,43 +1,41 @@
 /*navbar*/
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a,
 .navbar-default .navbar-nav > li.dropdown:hover > a:hover,
 .navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(231, 231, 231);
-    color: rgb(85, 85, 85);
+  background-color: rgb(231, 231, 231);
+  color: rgb(85, 85, 85);
 }
 
 li.dropdown:hover > .dropdown-menu {
-    display: block;
+  display: block;
 }
 
-.nav-link, 
-.hi{
-  color:white
+.nav-link,
+.sign-link-google {
+  color: white;
 }
 
 .nav-link:hover,
-.hi:hover{
-  color:white;
-
+.sign-link-google:hover {
+  color: white;
 }
 
-
 .login-app,
-.logout-app{
+.logout-app {
   display: flex;
   justify-content: space-around;
   width: 15%;
-
 }
 
-.hi{  text-decoration: none !important;}
-#hajer {
-  display:flex;
-  justify-content:space-between;
-  position:fixed;
-  top:0px;
-  right:0px;
-  left:0px;
+.sign-link-google {
+  text-decoration: none !important;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
   z-index: 1;
 }
-

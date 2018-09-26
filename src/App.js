@@ -1,11 +1,10 @@
 import React from "react";
-import Cards from "./cards";
-import Footer from "./footer";
-import Inscrip from "./inscrip";
-import About from "./About";
 import { Route } from "react-router-dom";
+import axios from "axios";
 import "./App.css";
-import Login from "./login";
+import Navbar from "./navbar";
+import Cards from "./cards";
+import About from "./About";
 import Rent from "./rent";
 import Garden from "./garden";
 import RepairsMaintenances from "./repairsmaint";
@@ -15,8 +14,9 @@ import Studio from "./studio";
 import Apartment from "./apartment";
 import BoardingHouse from "./boardingHouse";
 
-import axios from "axios";
 import ServMaint from "./servMaint";
+import Inscrip from "./inscrip";
+import Footer from "./footer";
 
 class App extends React.Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="menu">
-          <Login />
+          <Navbar />
         </div>
 
         <Route exact path="/" component={About} />
