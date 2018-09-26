@@ -14,30 +14,7 @@ export default class Rent extends React.Component {
     this.setState({
       rentcard: value
     });
-  } /* 
-                
-                <th>image</th>
-                <th>price</th>
-                <th>type</th>
-                <th>category</th>
-                <th>Rented Name</th>
-                <th>Numero</th>
-                <th>Adress </th>
-                <th>disponibility</th>
-                
-             
-               
-                <td><img  className="cardrenimg"src={this.state.rentcard.img} alt="renCard"/></td>
-                <td>{this.state.rentcard.price}</td>
-                <td>{this.state.rentcard.type}</td>
-                <td>{this.state.rentcard.category}</td>
-                <td>{this.state.rentcard.rented}</td>
-                <td>{this.state.rentcard.numero}</td>
-                <td>{this.state.rentcard.adress}</td>
-                
-                <td>{this.state.rentcard.disponibility}</td>
-                
-             */
+  }
   componentDidMount() {
     let path = "/getAnnonce/" + this.props.plow;
     axios
@@ -76,11 +53,19 @@ export default class Rent extends React.Component {
               Disponibility: {this.state.rentcard.disponibility}
             </h6>
           </div>
-          <div className="button-container">
-            <Button className="button-verif-rent" color="danger">
-              Rent
-            </Button>
-          </div>
+          {this.state.rentcard.disponibility === "disponible" ? (
+            <div className="button-container">
+              <Button className="button-verif-rent" color="danger">
+                Rent
+              </Button>
+            </div>
+          ) : (
+            <div className="button-container">
+              <Button disabled className="button-verif-rent" color="danger">
+                Rent
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     );

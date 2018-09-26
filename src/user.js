@@ -2,6 +2,10 @@ import React from "react";
 
 export default class User extends React.Component {
   render() {
-    return;
+    return(
+      <div>
+        user
+      </div>
+    )
   }
 }

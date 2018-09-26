@@ -4,7 +4,6 @@ import axios from "axios";
 import "./App.css";
 import Navbar from "./navbar";
 import Cards from "./cards";
-import About from "./About";
 import Rent from "./rent";
 import Garden from "./garden";
 import RepairsMaintenances from "./repairsmaint";
@@ -13,7 +12,6 @@ import CarRental from "./carrental";
 import Studio from "./studio";
 import Apartment from "./apartment";
 import BoardingHouse from "./boardingHouse";
-
 import ServMaint from "./servMaint";
 import Inscrip from "./inscrip";
 import Footer from "./footer";
@@ -45,8 +43,12 @@ class App extends React.Component {
           <Navbar />
         </div>
 
-        <Route exact path="/" component={About} />
-        <Route exact path="/about us" component={About} />
+        <Route
+          exact
+          path="/"
+          render={() => <Cards cards={this.state.cards} />}
+        />
+        <Route path="/home" render={() => <Cards cards={this.state.cards} />} />
         <Route exact path="/Inscription" component={Inscrip} />
 
         <Route
@@ -81,8 +83,6 @@ class App extends React.Component {
           path="/houses/boarding-houses"
           render={() => <BoardingHouse cards={this.state.cards} />}
         />
-
-        <Route path="/home" render={() => <Cards cards={this.state.cards} />} />
 
         <Route
           path="/annonces/:id"
